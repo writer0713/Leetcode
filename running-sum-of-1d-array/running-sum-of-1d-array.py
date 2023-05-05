@@ -11,9 +11,7 @@ class Solution:
                 dict[idx] = value
             else:
                 dict[idx] = value + dict[idx - 1]
-
-        print(dict.values())
-        
+                
         return dict.values()
             
 
