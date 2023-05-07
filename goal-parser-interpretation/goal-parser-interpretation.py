@@ -10,10 +10,8 @@ class Solution:
                 result += "G"
             elif command[idx] == "(" and command[idx + 1] == ")":
                 result += "o"
-                idx += 1
-            else: # (al)
+            elif command[idx] == "(" and command[idx + 1] != ")":
                 result += "al"
-                idx += 3
 
             idx += 1
 
