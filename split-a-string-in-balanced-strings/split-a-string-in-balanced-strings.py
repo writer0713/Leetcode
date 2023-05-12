@@ -1,9 +1,7 @@
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
         cnt = 0
-        r = 0
-        l = 0
-        prev_char = None
+        r = l = 0
         for char in s: # RLRRLLRLRL
             
             if char == 'R':
@@ -13,9 +11,7 @@ class Solution:
 
             if r == l:
                 cnt += 1
-                r = 0
-                l = 0
-
+                r = l = 0
 
         return cnt
 
